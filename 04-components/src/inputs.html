@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-desk-dark">
+    <main class="font-inter text-white block w-full p-3">
+      <div class="flex py-4 gap-8 flex-wrap">
+        <a href="./index.html">
+          <h1 class="text-3xl font-bold underline">Buttons</h1>
+        </a>
+        <a href="./inputs.html">
+          <h1 class="text-3xl font-bold underline">Inputs</h1>
+        </a>
+        <a href="./cards.html">
+          <h1 class="text-3xl font-bold underline">Cards</h1>
+        </a>
+        <a href="./posts.html">
+          <h1 class="text-3xl font-bold underline">Posts</h1>
+        </a>
+      </div>
+
+      <br class="select-none" />
+
+      <div class="flex flex-wrap gap-10">
+        <div
+          class="flex items-center justify-between focus-within:border-twitter-blue rounded border border-neutral-500 py-4 px-3 relative w-almost-md"
+        >
+          <input
+            class="bg-transparent peer focus:outline-none grow"
+            placeholder="placeholder"
+          />
+          <label
+            class="absolute peer-focus:text-twitter-blue text-neutral-500 font-medium left-4 -top-2 text-xs px-1 leading-regular bg-desk-dark pointer-events-none"
+          >
+            <p class="text-center">Label</p>
+          </label>
+          <img
+            class="peer-focus:opacity-100 opacity-0"
+            src="../public/images/correct.svg"
+          />
+        </div>
+
+        <div class="flex gap-3 items-start w-almost-md-2">
+          <img
+            class="w-9 h-9 aspect-square"
+            src="https://i.pinimg.com/474x/9e/6b/af/9e6baf0dd3bd7b3049ac4f84e5bb3140.jpg"
+          />
+          <input
+            class="bg-transparent caret-twitter-blue text-neutral-50 text-xl font-normal leading-regular h-9 focus:outline-none grow"
+            value="Always be a child"
+            placeholder="What's happening?!"
+          />
+        </div>
+
+        <div
+          class="group px-4 rounded-full gap-[15px] flex items-center border border-1 focus-within:border-twitter-blue border-transparent bg-searchbar-fill py-2.5"
+        >
+          <img
+            class="group-focus-within:hidden inline-block"
+            src="../public/images/search-inactive.svg"
+          />
+
+          <img
+            class="group-focus-within:inline-block hidden"
+            src="../public/images/search-active.svg"
+          />
+
+          <input
+            type="text"
+            class="text-base placeholder:text-neutral-600 text-neutral-50 font-normal leading-regular focus:outline-none grow bg-transparent"
+            placeholder="Search"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
